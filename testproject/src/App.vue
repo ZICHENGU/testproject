@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+  	<div class="app_wrapper">
+  		<img src="./assets/logo.png">
+    	<h1>Hello VUE</h1>
+  	</div>
+    
     <router-view/>
   </div>
 </template>
@@ -11,13 +15,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;/*抗锯齿*/
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .app_wrapper{
+  		text-align: center;
+  	  margin-top:60px ;
+  	 h1{
+	  	color: goldenrod;
+	  	font-size: 30px;
+  }
+  }
+ 
 }
 </style>
